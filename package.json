@@ -4,7 +4,8 @@
   "description": "This is a sample app for DSA tracking. #### Installation -   Use Node `v20.17.0`  -   Create a `.env` file in the `server/` folder -   Add `DB_URL=mongodb+srv://xxx:xxx@cluster0.s7yvf.mongodb.net/DSA-Sheet?retryWrites=true&w=majority&appName=Cluster0` in `server/.env` file -  Update `BASE_URL` and `GUEST_CREDENTIALS` in `client/src/configurations/environment.js`",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --prefix client",
+    "build": "cd client && npm install --include=dev && npm run build",
+    "start": "node server/src/app.js",
     "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\""
   },
   "repository": {
