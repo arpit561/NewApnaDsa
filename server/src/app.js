@@ -14,3 +14,12 @@ app.listen(ENVIRONMENT_CONFIGS.PORT, async () => {
   console.log(`Server started on PORT [${ENVIRONMENT_CONFIGS.PORT}]`);
   await dbConnect();
 });
+// Serve React build in production
+if (process.env.NODE_ENV === "production") {
+  const buildPath = path.join(__dirname, "../../dist");
+  app.use(express.static(buildPath));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(buildPath, "index.html"));
+  });
+}
