@@ -1,57 +1,8 @@
-# DSA-Sheet
-This is a sample app for DSA tracking.
-#### Installation
--   Use Node `v20.17.0` 
--   Create a `.env` file in the `server/` folder
--   Add `DB_URL=mongodb+srv://xxx:xxx@cluster0.s7yvf.mongodb.net/DSA-Sheet?retryWrites=true&w=majority&appName=Cluster0` in `server/.env` file
--  Update `BASE_URL` and `GUEST_CREDENTIALS` in `client/src/configurations/environment.js`
+# React + Vite
 
-- ##### 
-    ```sh
-    # Run the below commands to install the dependency 
-    cd client
-    npm i
-    cd ..
-    cd server
-    npm i
-    ```
-- ##### 
-    ```sh
-    Run the below commands to run the app
-    cd client
-    npm run dev
-    
-    cd server
-    npm run dev
-    ```
- 
- 
- ## Demo
- [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2D5kqpabIQQ/0.jpg)](https://www.youtube.com/watch?v=2D5kqpabIQQ)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
- 
- ## Screenshots
-###### Home Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/home.png)
-###### Login Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/login.png)
-###### Guest Login Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/guest_login.png)
-###### Topics Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/topics.png)
-###### Topic Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/topic.png)
-###### Resources Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/resources.png)
-###### Problems Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/problem.png)
-###### Problem Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/problem.png)
-###### Problem Note Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/problem_note.png)
-###### No Problem Screen:
-![This is an image](https://raw.githubusercontent.com/nikhilkrdwivedi/DSA-Sheet/refs/heads/master/screenshots/no_problem_found.png)
- 
-Please reach out to me for any help or suggestions: [Nikhil Kumar](https://www.linkedin.com/in/nikhilkrdwivedi/)
+Currently, two official plugins are available:
 
-**Free Software, Hell Yeah!**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
